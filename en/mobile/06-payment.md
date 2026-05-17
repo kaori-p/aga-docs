@@ -11,10 +11,12 @@ After creating a medicine order, you need to pay for it before it is shipped. Th
 
 ## How to Access
 
-When your order is in **Pending Payment** state:
-1. Tap the **Orders** tab
-2. Tap **Pay Now** (or the order details area)
-3. The payment screen opens
+When your order requires payment, tap the **Orders** tab and tap the order to open the payment screen. The states that require payment are:
+
+- **Pending Payment** — card or payment confirmation needed
+- **Pending Bank Payment** — bank transfer confirmation needed
+- **Free** — free delivery confirmation needed
+- **Payment Failed** — a previous payment attempt failed; tap to retry
 
 ---
 
@@ -65,6 +67,10 @@ When your order qualifies for free delivery:
 2. A confirmation button appears
 3. Tap **Confirm** to process the free order
 
+### Clinic Payment
+
+Some orders are billed directly to the clinic account. In this case, no payment action is required from you — the order is handled by the clinic and will be confirmed automatically.
+
 ---
 
 ## Payment Success Screen
@@ -96,6 +102,8 @@ You can manage your saved cards from the payment screen. Saved cards display:
 | "Invalid card number" | The card number entered is not a valid format | Double-check the card number and try again |
 | "Invalid CVC" | The security code is incorrect | Check the CVC on the back of the card and re-enter it |
 | "Payment failed" | A general payment error occurred | Try again, or try a different payment method. Contact the clinic if the problem continues |
+| "Insufficient funds" | Your card does not have enough balance | Use a different card or payment method |
+| "Order error" | A problem with the order prevented payment | Contact the clinic — the order may need to be reissued |
 
 ---
 

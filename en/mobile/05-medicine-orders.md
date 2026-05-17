@@ -21,14 +21,19 @@ The Orders tab shows a badge number when you have a pending payment that needs a
 
 Your latest order is shown on this screen. The display changes based on the order's current state:
 
-| State | What it means |
-|-------|---------------|
-| **No Order** | You do not have any medicine orders yet. An option to create one may appear. |
-| **Pending Payment** | Your order is ready but has not been paid yet. Tap to pay. |
-| **Paid** | Payment was received. Your order will be shipped soon. |
-| **Shipped** | Your medicines are on their way. |
-| **Expired** | The order period has passed without payment. This order is no longer valid. |
-| **Canceled** | The order was canceled. |
+| State | What it means | Do you need to do something? |
+|-------|---------------|------------------------------|
+| **No Order** | You do not have any orders yet. | Create an order after your consultation |
+| **Pending Payment** | Your order is ready and waiting for card payment. | Yes — tap to pay |
+| **Pending Bank Payment** | You chose bank transfer — the clinic is waiting to receive your transfer. | Yes — complete the bank transfer if not done yet |
+| **Free** | Your order qualifies for free delivery. | Yes — tap to confirm |
+| **Unconfirmed** | Your order has been created but is not yet confirmed by the clinic. | No — wait for the clinic |
+| **Payment Failed** | Your payment attempt did not go through. | Yes — tap to try paying again |
+| **Free Confirmed** | Your free delivery is confirmed. Your order will be shipped soon. | No |
+| **Paid** | Payment was received. Your order will be shipped soon. | No |
+| **Shipped** | Your medicines are on their way. | No |
+| **Canceled** | The order was canceled by the clinic. | Contact the clinic for details |
+| **Expired** | The payment deadline passed without payment. This order is no longer valid. | Contact the clinic to create a new order |
 
 ---
 
