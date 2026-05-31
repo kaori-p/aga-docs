@@ -60,32 +60,46 @@ A time block marks an employee as unavailable for that period.
 3. A dialog opens. Enter:
    - **Start time** (required)
    - **End time** (required)
-   - **Description** (optional)
+   - **Type** (required): cannot be changed after creation
+   - **Title** (optional): available when type is "Block" or "First Visit & Extended Exam Only"
+   - **Color** (optional): available when type is "Block" or "First Visit & Extended Exam Only"
 4. Click **Save**
 
 The block appears on the timeline immediately.
 
 ### Editing a Time Block
 
-1. Click on an existing time block
-2. A dialog opens showing the current start time, end time, and description
-3. Edit the fields as needed
+Saved time blocks can be edited at any time.
+
+1. Switch to **Time Block** mode
+2. Click on an existing time block
+3. A dialog opens showing the current settings. You can change:
+   - **Start time** / **End time**
+   - **Title** (when type is "Block" or "First Visit & Extended Exam Only")
+   - **Color** (when type is "Block" or "First Visit & Extended Exam Only")
+   - **Note**: The block type cannot be changed after creation
 4. Click **Save**
 
 ### Deleting a Time Block
 
-1. Click on the time block you want to remove
-2. In the dialog, click **Delete**
-3. Confirm the deletion when prompted
+Saved time blocks can be deleted, including those in past time slots.
+
+1. Switch to **Time Block** mode
+2. Click on the time block you want to remove
+3. Click the **delete icon** in the top-right corner of the dialog
+4. Confirm the deletion when prompted
 
 ### Managing Time Dividers
 
 Time dividers break an employee's workday into visible sections. They do not block appointments but help organize the timeline visually.
 
+#### Adding
+
 **Manual mode** (one day, one employee at a time):
 1. Switch to **Time Divider — Manual** mode
 2. Click on a time slot in an employee's row
-3. A divider is added at that time
+3. A divider is added at that time (shown in red as unsaved)
+4. Click **Save** to confirm
 
 **Automatic mode** (multiple employees, multiple days at once):
 1. Switch to **Time Divider — Automatic** mode
@@ -94,7 +108,22 @@ Time dividers break an employee's workday into visible sections. They do not blo
 4. Set the divider times
 5. Click **Apply**
 
-To remove a divider, click on it and select **Delete**.
+#### Deleting
+
+**Manual mode** (one day, one employee at a time):
+1. Switch to **Time Divider — Manual** mode
+2. Click on the divider you want to remove (it is marked for deletion)
+3. Click **Save** to confirm
+   - Click the divider again to undo the deletion before saving
+   - Dividers in past time slots cannot be deleted
+
+**Automatic mode** (multiple employees, multiple days at once):
+1. Switch to **Time Divider — Automatic** mode
+2. Click on a divider you want to remove
+3. A dialog opens — set the start and end time range to delete all dividers within that range
+4. Click **Apply** (takes effect immediately, no Save required)
+
+> **Note**: You cannot move a time divider to a different time. To change its position, delete it and add a new one.
 
 ### Managing Lunch Breaks
 
@@ -168,11 +197,14 @@ Both appointments exchange their time slots and assigned staff members.
 
 ## Marking a Staff Member as Unavailable for Mobile
 
+> The button for this feature is labeled **"アプリB"** (Manage Employee) in the top-right corner of the calendar.
+
 When a staff member is marked unavailable for mobile during a time period, patients cannot book them through the mobile app during that time.
 
 1. Switch to **Unavailable for Mobile** mode
-2. Click on the time range in the employee's row
-3. The system marks that period as unavailable for mobile booking
+2. Click on the employee's name on the left side of the calendar
+3. That employee is marked as unavailable for mobile for the entire day (click again to undo)
+4. Click **Save** to confirm
 
 ---
 
